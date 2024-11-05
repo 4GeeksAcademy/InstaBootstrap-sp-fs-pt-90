@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fa-brands fa-instagram mr-1"></i>
+                <span>Instagram</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@getbootstrap">Create new post</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Caption:</label>
+                                    </div>
+                                    <textarea class="form-control" placeholder="Add your caption here!"
+                                        id="floatingTextarea2"></textarea>
+                                </form>
+                            </div>
+                            <div class="row p-2">
+                                <button class="col-1 border rounded p-1 m-1 btn-light">
+                                    <i class="fa-solid fa-camera"></i>
+                                </button>
+                                <button class="col-1 border rounded p-1 m-1 btn-light">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy & Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+    <div class="container-fluid">
+        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                    aria-selected="true" style="background-color: white;">
+                    <i class="fa-solid fa-table-cells text-secondary"></i>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                    aria-selected="false" style="background-color: white;" >
+                    <i class="fa-solid fa-square text-secondary"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://southamericatourism.com/wp-content/uploads/2018/08/PAT_1400x1000_EcoCamp6.jpg"
+                            class="img-fluid w-100"></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://www.shiftcities.org/sites/default/files/styles/og_image/public/2021-12/Brazil%20small.png?itok=FhmSiGT0"
+                            class="img-fluid w-100"></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://www.caporasoandpartnerslawofficepanama.com/img/articles/bandera-colombia.jpeg"
+                            class="img-fluid w-100"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://www.touristegypt.com/wp-content/uploads/2023/03/giza-pyramids-cairo-egypt-with-palm-1024x634.jpg"
+                            class="img-fluid w-100"></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2024/09/10/92179ccffd614ab692e7513cec63d0c8_iStock-534799507_HeroImage.jpg"
+                            class="img-fluid w-100"></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://shinkyosei.edu.vn/uploads/images/images/thanh-pho-seoul-han-quoc-1.jpg"
+                            class="img-fluid w-100"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://mandalatours.net/wp-content/uploads/2024/01/tibet-destino.jpg"
+                            class="img-fluid w-100"></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://www.travelandleisure.com/thmb/yTXraNrnwAhrDXxesOyo_9hGglE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/safari-truck-giraffes-micato-safaris-SAFARIGUIDETIPS0721-2549bb165aa34dc193cb8b6f3958654b.jpg"
+                            class="img-fluid w-100"></div>
+                    <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                            src="https://cdn.britannica.com/64/94864-050-223C3FE6/Northern-lights-sky-Kautokeino.jpg"
+                            class="img-fluid w-100"></div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h6>The Patagonia</h6>
+                                </div>
+                                <div class="col-3">
+                                    <small>2/11/24</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm">
+                            <img src="https://southamericatourism.com/wp-content/uploads/2018/08/PAT_1400x1000_EcoCamp6.jpg"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Thumbnail">
+                            <div class="card-body">
+                                <div class="Likes"><strong>100 Likes</strong></div>
+                                <p class="card-text">This first on the list of place I'm dying to go to. Considering the
+                                    fact that I love the outdoors, I would definitely thrive there. #thepatagonia #argentina #chile
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h6>Brazil</h6>
+                                </div>
+                                <div class="col-3">
+                                    <small>3/11/24</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm">
+                            <img src="https://www.shiftcities.org/sites/default/files/styles/og_image/public/2021-12/Brazil%20small.png?itok=FhmSiGT0"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Thumbnail">
+                            <div class="card-body">
+                                <div class="Likes"><strong>101 Likes</strong></div>
+                                <p class="card-text">Second on the list is Brazil. In my space time, I love listening to
+                                    Bossa Nova and learning a bit of Portugese. Brazilians are so kind and friendly. #brazil
+                                    #bomdia
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h6>Colombia</h6>
+                                </div>
+                                <div class="col-3">
+                                    <small>4/11/24</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm">
+                            <img src="https://www.caporasoandpartnerslawofficepanama.com/img/articles/bandera-colombia.jpeg"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Thumbnail">
+                            <div class="card-body">
+                                <div class="Likes"><strong>102 Likes</strong></div>
+                                <p class="card-text">Colombia, tierra querida... my father's motherland. From bandeja
+                                    paisa to vallenatos, it's everything and more. #colombia #paisa #quehubo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h6>Egypt</h6>
+                                </div>
+                                <div class="col-3">
+                                    <small>5/11/24</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm">
+                            <img src="https://www.touristegypt.com/wp-content/uploads/2023/03/giza-pyramids-cairo-egypt-with-palm-1024x634.jpg"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Thumbnail">
+                            <div class="card-body">
+                                <div class="Likes"><strong>103 Likes</strong></div>
+                                <p class="card-text">Having 1 of the 7 wonders of the world, no wonder I want to go. The
+                                    culture, the unbearable heat are only a few of the reasons why I want to visit. #egypt
+                                    #pyramids
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h6>Italy</h6>
+                                </div>
+                                <div class="col-3">
+                                    <small>6/11/24</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm">
+                            <img src="https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2024/09/10/92179ccffd614ab692e7513cec63d0c8_iStock-534799507_HeroImage.jpg"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Thumbnail">
+                            <div class="card-body">
+                                <div class="Likes"><strong>104 Likes</strong></div>
+                                <p class="card-text">Dying to have my Eat, Pray, Love moment in Italy. Ready to eat all
+                                    of the pizza and pasta my stomach can handle. #italy #history</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h6>Korea</h6>
+                                </div>
+                                <div class="col-3">
+                                    <small>7/11/24</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm">
+                            <img src="https://shinkyosei.edu.vn/uploads/images/images/thanh-pho-seoul-han-quoc-1.jpg"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Thumbnail">
+                            <div class="card-body">
+                                <div class="Likes"><strong>105 Likes</strong></div>
+                                <p class="card-text">Give me all of the kimchi and yummy food! Having taught English to
+                                    lots of Koreans, their culture seems so rad. #korea #kimchi #hanbok</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h6>Tibet</h6>
+                                </div>
+                                <div class="col-3">
+                                    <small>8/11/24</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm">
+                            <img src="https://mandalatours.net/wp-content/uploads/2024/01/tibet-destino.jpg"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Thumbnail">
+                            <div class="card-body">
+                                <div class="Likes"><strong>106 Likes</strong></div>
+                                <p class="card-text">I want to see the remarkable Himalayan views. It's a place not many
+                                    have the opportunity to travel to. #tibet #himalayas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h6>Kenya</h6>
+                                </div>
+                                <div class="col-3">
+                                    <small>9/11/24</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm">
+                            <img src="https://www.travelandleisure.com/thmb/yTXraNrnwAhrDXxesOyo_9hGglE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/safari-truck-giraffes-micato-safaris-SAFARIGUIDETIPS0721-2549bb165aa34dc193cb8b6f3958654b.jpg"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Thumbnail">
+                            <div class="card-body">
+                                <div class="Likes"><strong>107 Likes</strong></div>
+                                <p class="card-text">At the top of my bucketlist is to see elephants in the wild. I know
+                                    that it would be one of the best days of my life. #kenya #elephants #safari </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h6>Norway</h6>
+                                </div>
+                                <div class="col-3">
+                                    <small>10/11/24</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm">
+                            <img src="https://cdn.britannica.com/64/94864-050-223C3FE6/Northern-lights-sky-Kautokeino.jpg"
+                                class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Thumbnail">
+                            <div class="card-body">
+                                <div class="Likes"><strong>108 Likes</strong></div>
+                                <p class="card-text">Last on the list is Norway. I know I can see the Northern Lights in
+                                    other
+                                    countries, but Norway seems like the most fun to visit. #norway #northern lights</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
